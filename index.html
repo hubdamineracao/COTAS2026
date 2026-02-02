@@ -1023,7 +1023,7 @@ function renderTierDetail(tier, t) {
             price: 'R$ 300.000', 
             tickets: currentLang === 'pt' ? '50 INGRESSOS' : '50 TICKETS', 
             cocktails: currentLang === 'pt' ? '15 CONVITES' : '15 INVITATIONS', 
-            web: `YES, ${firstLevel}`, 
+            web: currentLang === 'pt' ? 'SIM, PRIMEIRO PLANO' : 'YES, FIRST PLAN', 
             badge: `${badgeFooter} ${firstLevel}` 
         },
         premium: { 
@@ -1031,7 +1031,7 @@ function renderTierDetail(tier, t) {
             price: 'R$ 200.000', 
             tickets: currentLang === 'pt' ? '30 INGRESSOS' : '30 TICKETS', 
             cocktails: currentLang === 'pt' ? '10 CONVITES' : '10 INVITATIONS', 
-            web: `YES, ${secondLevel}`, 
+            web: currentLang === 'pt' ? 'SIM, SEGUNDO PLANO' : 'YES, SECOND PLAN', 
             badge: `${badgeFooter} ${secondLevel}` 
         },
         standard: { 
@@ -1039,7 +1039,7 @@ function renderTierDetail(tier, t) {
             price: 'R$ 100.000', 
             tickets: currentLang === 'pt' ? '15 INGRESSOS' : '15 TICKETS', 
             cocktails: currentLang === 'pt' ? '5 CONVITES' : '5 INVITATIONS', 
-            web: `YES, ${thirdLevel}`, 
+            web: currentLang === 'pt' ? 'SIM, TERCEIRO PLANO' : 'YES, THIRD PLAN',
             badge: badgeBack
         }
     }[tier];
